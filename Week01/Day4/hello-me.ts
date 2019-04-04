@@ -1,1 +1,3 @@
-console.log('Hello, Lehel');
+'use strict';
+
+console.log('Hello, Lehel!');
