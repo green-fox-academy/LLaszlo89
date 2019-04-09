@@ -1,9 +1,17 @@
 'use strict';
 
-let a: number=0;
-(let i: number = 0; i < 100; i++);
+/* let i: number=1;
 
-    console.log(a);
+
+for ( i=1; i < 100; i++);
+
+    console.log(i) */
+
+    var i= 1;
+
+    for ( i=1, i< 100, i++ )
+
+        console.log(i);
 
 // Write a program that prints the numbers from 1 to 100.
 // But for multiples of three print “Fizz” instead of the number

@@ -1,6 +1,6 @@
 'use strict'
 
-let nemToGreet: string = "Greenfox";
+let namToGreet: string = "Greenfox";
 
 function greet ( name ) {
     console.log('Greetings, dear ' + name);
@@ -8,12 +8,10 @@ function greet ( name ) {
     
     
 }
-greet('Dalma');
+greet (' Dalma ');
 
 
-
-
-
+  
 
 // -  Create variable named `nameToGreet` and assign the value `Greenfox` to it
 // -  Create a function called `greet` that greets it's input parameter

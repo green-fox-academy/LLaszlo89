@@ -1,15 +1,15 @@
 'use strict';
 
 let number: number = 15;
-let number2: number =1;
 
+for( let i: number = 1 ; i <= 10 ; i++ ){
+
+    console.log(i + "+", number + "=" + i* number);
     
-    for ( number2=1; number2<11; number2++)
-    
-
-console.log(number * number2)
+}
 
 
+      
 
 
-
+ 

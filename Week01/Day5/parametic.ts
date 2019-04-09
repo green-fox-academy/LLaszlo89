@@ -1,7 +1,7 @@
 'use strict';
 
 let a: number= 8;
-let b: number= 2;
+let b: number= 1;
 
  var  average = (( a + b ) / 2 );
  console.log("Average: " + average );
@@ -12,4 +12,4 @@ let b: number= 2;
 
 // Write a program that calculates the sum and the average from 1 to a given number.
 // Example input: 5
-// Example output: Sum: 15, Average: 3
+// Example output: Sum: 15, Average: 3 
