@@ -2,10 +2,11 @@
 
 var step: number;
 for (step = 1; step <=100; step++){
-    if (step % 3 ===0 && step % 5 ===0){
-        console.log('FizzBuzz');
-        
-    }else if ( step % 3 ===0){
+if (step % 3 ===0 && step % 5 ===0){
+    console.log('FizzBuzz');
+    console.log('FizzBuzz');
+    
+}else if ( step % 3 ===0){
         console.log('Fizz');
         
     }else if (step % 5 ===0){
