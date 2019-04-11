@@ -1,22 +1,32 @@
 'use strict';
 
-/* let lineCount: number = 4;
- */
+let lineCount: number = 4;
+let spaceBase: string = '';
+let spaceElement: string = ' ';
+let starElement: string = '*';
+let actualLine: string = '';
+let starCount: number = 1;
+
 // Write a program that draws a
 // pyramid like this:
 //
-//    *
+// 0*
 //   ***
 //  *****
 // *******
 //
 // The pyramid should have as many lines as lineCount is
-function pyramid(n) {
- 
-    for(let i=1; i<= n; i++){
-      let str = ' '.repeat(n-i);
-      let str2 = '#'. repeat(i*2 -1)
-   
-      console.log(str + str2 + str);
-    }
+
+function repeater(base: string, element: string, repeat: number) {
+  for (let i: number = 1; i <= repeat; i++) {
+    base += element;
   }
+  return (base);
+}
+
+for (lineCount; lineCount >= 1;  lineCount--) {
+  actualLine = repeater(spaceBase, spaceElement, lineCount - 1);
+  actualLine += repeater(spaceBase, starElement, starCount);
+  starCount += 2;
+  console.log(actualLine);
+}
