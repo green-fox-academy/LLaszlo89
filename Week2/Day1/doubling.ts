@@ -1,15 +1,10 @@
 'use strict';
 
-let baseNum : any = 123;
-function doubling ( x: number , y: number): number {
-    return  x * y;
+let baseNum: number = 123;
+function doubling(): number {
+    return baseNum * 2
 };
-baseNum = doubling (2,6);
-
-console.log(baseNum);
-
-
-
+console.log(doubling());
 
 
 // -  Create a variable named `baseNum` and assign the value `123` to it
