@@ -3,7 +3,7 @@
 
 
 let typo: string = 'Chinchill';
-function appendAFunc(typo): string {
+function appendAFunc(typo:string): string {
 return  typo + "a"
 }
 console.log(appendAFunc(typo));
