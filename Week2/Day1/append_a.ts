@@ -15,17 +15,3 @@ let plusA = animals.map(
   
 
 
-
-
-
-/* function appendAFunc(animals?): string {
-return   animals.map() + "a";
-}
-console.log(appendAFunc(animals)); */
-
-/* console.log(['apple', 'pear', 'melon'].indexOf('pear')); // 1
-
-['apple', 'pear', 'melon'].forEach(function(e, i) {
-  console.log(e, i);
-});
- */
