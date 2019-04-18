@@ -7,7 +7,9 @@
 
 let integer = [4,5,6,7];
 
-for (let i =0; i<=integer.length ; i++  ){
-  console.log(integer[i]);
+//for (let i =0; i<=integer.length ; i++  ){
+  //console.log(integer[i]);
   
-}
+//}
+
+integers.map(elements => console.log(elements));
