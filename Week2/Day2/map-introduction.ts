@@ -1,8 +1,30 @@
 'use strict'
 
-let Key {}: number;
-let Value {}: string;
+let myObj:any= {};
+Object.keys(myObj).length ===0 ? console.log('The map is empty!') : ('This map is not empty!');
 
+console.log(Object.keys(myObj));
+console.log(Object.values(myObj));
+
+myObj[97] = "a";
+myObj[98] = "b";
+myObj[99] = "c";
+myObj[65] = "A";
+myObj[66] = "B";
+myObj[67] = "C";
+
+console.log(Object.keys(myObj));
+console.log(Object.values(myObj));
+
+myObj[68] = "D";
+
+console.log(Object.keys(myObj).length);
+
+console.log(myObj[99]);
+delete myObj[97];
+console.log(Object.keys(myObj));
+
+console.log(!myObj[100] ? ('NO 100') : ('Yep we have 100'));
 
 
 /* # Map introduction 1
