@@ -48,8 +48,15 @@ console.log( true);
 let i1: number = 10;
 let i2: number = 3;
 // tell if i1 is higher than i2 squared and smaller than i2 cubed (as a boolean)
+i1 > (i2 * i2) ? console.log('y'): console.log('N');
+
 
 let j: number = 1521;
-// tell if j is divisible by 3 or 5 (as a boolean)
 
-console.log();
+
+// tell if j is divisible by 3 or 5 (as a boolean)
+// Ez egy if statement roviditve
+( j % 3 || 5 ) ?  console.log('yes') : console.log('No');
+
+
+
