@@ -6,7 +6,7 @@ export class garden {
   currentWaterNeeds: number;
   minIntake: number;
 
-constructor(currentWaterNeeds = 110){
+constructor(currentWaterNeeds = ){
 this.currentWaterNeeds = currentWaterNeeds;
 
 
