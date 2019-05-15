@@ -1,0 +1,41 @@
+.Parent{
+  margin: 0 auto;
+  width: 1150px;
+ 
+}
+
+.Header {
+  display: flex;
+  width: 1150px;
+  margin: 0;
+  padding: 0;
+  background-color: purple;
+  align-items: center;
+}
+
+.Navigation {
+  height: 50px;
+  width: 150px;
+  background-color: lightskyblue;
+  list-style-type: none;
+  margin: 20px;
+}
+
+.Body {
+  display: flex;
+  width: 1150px;
+  margin: 0;
+  padding: 0;
+  
+}
+.Main {
+  width: 800px;
+  height: 1000px;
+  background-color: yellow;
+}
+.Sidebar {
+  width: 350px;
+  height: 1000px;
+  background-color: green;
+
+}
