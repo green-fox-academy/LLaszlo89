@@ -43,7 +43,7 @@
       let btns = document.querySelectorAll("button");
       let y = 0;
       let x = 0;
-      let zoom =0;
+      let zoom =200;
      
 
 
@@ -71,6 +71,13 @@
         } else if(i ===4){
            btns[i].addEventListener("click", () => {
            zoom += 10;
+           img.style.backgroundSize = zoom + "%";
+          });
+
+
+        } else if(i===5){
+          btns[i].addEventListener("click", () => {
+           zoom -= 10;
            img.style.backgroundSize = zoom + "%";
           });
 
