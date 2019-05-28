@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bookstore!</title>
+</head>
+
+<body>
+  <h1>Bookstore!</h1>
+  <table id="book-table" style="width:100%">
+
+  </table>
+</body>
+
+<script>
+
+let httpRequest = new XMLHttpRequest();
+httpRequest.onload = () => {
+  let data = JSON.parse(httpRequest.responseText);
+  console.log(data);
+
+  let table = document.getElementById('book-table');
+
+  for(let i = 0; i < data.length; i++) {
+    let row = document.createElement('tr');
+
+    let autname = document.createElement('td');
+    autname.innerText = data[i].aut_name;
+    row.appendChild(autname);
+
+    let book_name = document.createElement('td');
+    book_name.innerText = data[i].book_name;
+    row.appendChild(book_name);
+
+    let book_price = document.createElement('td');
+    book_price.innerText = data[i].book_price;
+    row.appendChild(book_price);
+
+    let cate_descrip = document.createElement('td');
+    cate_descrip.innerText = data[i].cate_descrip;
+    row.appendChild(cate_descrip);
+
+    let pub_name = document.createElement('td');
+    pub_name.innerText = data[i].pub_name;
+    row.appendChild(pub_name);
+
+    table.appendChild(row);
+  }
+};
+
+//DANGER ZONE
+let url = 'http://localhost:3000/books';
+const urlParams = new URLSearchParams(window.location.search);
+const categoryParam = urlParams.get('category');
+if (categoryParam) {
+  url += `?category=${categoryParam}`
+}
+//-------------
+
+httpRequest.open('GET', url, true);
+httpRequest.send();
+
+
+
+
+</script>
+
+</html>

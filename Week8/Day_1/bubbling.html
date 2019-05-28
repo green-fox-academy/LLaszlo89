@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Workshop: EventListeners</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        text-align: center;
+      }
+      button {
+        margin: 16px;
+      }
+      .img-inspector {
+        margin: 0 auto;
+        width: 500px;
+        height: 320px;
+        border: 1px solid #3a3a3a;
+        background-image: url("pict_grid7.jpg");
+        background-size: 200%;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <nav>
+      <button data-action="move" data-direction="up">Up</button>
+      <button data-action="move" data-direction="down">Down</button>
+      <button data-action="move" data-direction="left">Left</button>
+      <button data-action="move" data-direction="right">Right</button>
+      <button data-action="zoom" data-direction="in">Zoom in</button>
+      <button data-action="zoom" data-direction="out">Zoom out</button>
+    </nav>
+    <div class="img-inspector"></div>
+
+    <script type="text/javascript">
+      let img = document.querySelector(".img-inspector");
+      let btns = document.querySelectorAll("button");
+      let y = 0;
+      let x = 0;
+      let zoom =0;
+     
+
+
+      for (let i = 0; i < btns.length; i++) {
+        if (i === 0) {
+          btns[i].addEventListener("click", () => {
+            y -= 10;
+            img.style.backgroundPositionY = y + "px";
+          });
+        } else if (i === 1) {
+          btns[i].addEventListener("click", () => {
+            y += 10;
+            img.style.backgroundPositionY = y + "px";
+          });
+        } else if (i === 2) {
+          btns[i].addEventListener("click", () => {
+            x -= 10;
+            img.style.backgroundPositionX = x + "px";
+          });
+        } else if (i === 3) {
+          btns[i].addEventListener("click", () => {
+            x += 10;
+            img.style.backgroundPositionX = x + "px";
+          });
+        } else if(i ===4){
+           btns[i].addEventListener("click", () => {
+           zoom += 10;
+           img.style.backgroundSize = zoom + "%";
+          });
+
+
+        }
+      }
+    </script>
+  </body>
+</html>

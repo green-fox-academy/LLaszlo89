@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/green-fox-academy/LLaszlo89#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.1"
   }
 }
