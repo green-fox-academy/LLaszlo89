@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Buttonssss</title>
+  </head>
+  <body>
+    <h2>What is your favourite pet?</h2>
+    <div class="animCheck">
+      <label for="Dog">Dog</label>
+      <input type="radio" name="animal" value="Dog" id="Dog" />
+      <label for="Cat">Cat</label>
+      <input type="radio" name="animal" value="Cat" id="Cat" />
+      <label for="Viktor the goldfish">Viktor the goldfish</label>
+      <input
+        type="radio"
+        name="animal"
+        value="Viktor the goldfish"
+        id="Viktor the goldfish"
+      />
+    </div>
+
+    <h2>Do you want to sign up for cat facts?</h2>
+    <label for="Yes">Yes</label>
+    <input type="radio" name="yesNo" value="Yes" id="Yes" />
+    <label for="No">No</label>
+    <input type="radio" name="yesNo" value="No" id="No" />
+
+    <button class="a" disabled>I love cats</button>
+    <button class="b" disabled>Sign up</button>
+
+    <script>
+      let dog = document.querySelector("#Dog");
+      let cat = document.querySelector("#Cat");
+      let love = document.querySelector(".a");
+      let sign = document.querySelector(".b");
+      let yes = document.getElementById("Yes");
+      let vik = document.getElementById('Viktor');
+      let no = document.getElementById('No');
+
+      dog.addEventListener("click", () => {
+        sign.disabled = false;
+      });
+      cat.addEventListener("click", () => {
+        sign.disabled = false;
+      });
+
+      yes.addEventListener("click", () => {
+        love.disabled = false;
+      });
+      sign.addEventListener("click", () => {
+        alert("Thank you, you've successfully signed up for cat facts");
+      });
+
+    </script>
+  </body>
+</html>
